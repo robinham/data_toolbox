@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?><ds:ThemeStyleType xmlns:ds="http://model.data.cdt.ibm.com/theme">
+    
+	<descriptor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Luminance" thumbnail="luminance_thumb.png" version="2.3"/>
+
+    <dashboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <background backgroundColor="{247, 251, 254}" backgroundImage="luminance_bg.jpg" backgroundRepeat="no-repeat"/>
+    </dashboard>
+	
+    <widget xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <background opacity="0"/>
+		<!--<background background-color="{247, 251, 254}"/>
+        <color value="{50, 50, 50}"/>-->
+		<borderTop borderWidth="0" borderStyle="solid" borderColor="{207, 232, 238}"/>
+		<borderRight borderWidth="0" borderStyle="solid" borderColor="{207, 232, 238}"/>
+		<borderBottom borderWidth="0" borderStyle="solid" borderColor="{207, 232, 238}"/>
+		<borderLeft borderWidth="0" borderStyle="solid" borderColor="{207, 232, 238}"/>
+    </widget>
+    
+	 <text xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<background opacity="0"/>
+        <color value="{94, 153, 102}"/>
+		<font fontFamily="Arial" fontSize="10px" fontWeight="normal"/>
+		<border borderWidth="0" borderStyle="solid" borderColor="{48, 108, 180}"/>
+    </text>
+
+	<image xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<background opacity="0"/>
+		<border borderWidth="0" borderStyle="solid" borderColor="{153, 204, 255}"/>
+    </image>
+
+    <action xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <background opacity="0"/>
+        <color value="{90, 90, 90}"/>
+        <font fontFamily="Arial" fontSize="9px" fontWeight="bold"/>
+        <border borderWidth="0" borderStyle="solid" borderColor="{0, 0, 0}"/>
+    </action>
+	
+    <cubeViewer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <background opacity="0"/>
+		<!--<background background-color="{247, 251, 254}"/>-->
+        <title>
+        <background opacity="0" backgroundColor="none"/>
+		<!--<background background-color="{247, 251, 254}" background-image="none"/>-->
+		    <color value="{94, 153, 102}"/>    
+            <font fontFamily="Arial" fontSize="10px" fontWeight="normal"/>
+        </title>
+
+        <overview>
+			<background backgroundColor="{247, 251, 254}" backgroundImage="overview_background.png" backgroundRepeat="repeat-x"/>
+			<color value="{0, 0, 0}"/>
+			<paddingTop value="2"/> 
+            <paddingBottom value="8"/>
+			<header>
+				<color value="{104, 168, 224}"/>
+				<rowsImage>classpath:com.ibm.cdf.cui:images/overview/rows.png</rowsImage>
+				<columnsImage>classpath:com.ibm.cdf.cui:images/overview/columns.png</columnsImage>
+				<contextImage>classpath:com.ibm.cdf.cui:images/overview/context.png</contextImage>
+			</header>
+
+			<element>
+				<background backgroundColor="{255, 255, 255}"/>
+				<color value="{0, 0, 0}"/>
+				<font fontFamily="Tahoma" fontSize="8px"/>
+				<border borderColor="{161, 169, 188}"/>
+				<paddingTop value="3"/>
+				<secondary>
+					<color value="{0, 0, 0}"/>
+					<font fontFamily="Tahoma" fontSize="0px"/>
+				</secondary>
+
+				<highlight>
+					<background backgroundColor="{19, 70, 121}"/>
+				</highlight>
+
+				<gripper>
+					<background backgroundColor="{224, 224, 224}"/>
+					<color value="{0, 0, 0}"/>
+				</gripper>
+				<gripperBox>
+					<normal overlay="classpath:com.ibm.cdf.cui:images/overview/gripperbox_normal_ov.png"/>
+				</gripperBox>
+				<arrowBox>
+					<normal overlay="classpath:com.ibm.cdf.cui:images/overview/arrowbox_normal_ov.png"/>
+				</arrowBox>
+				<labelBox>
+					<normal topLeft="classpath:com.ibm.cdf.cui:images/overview/labelbox_normal_tl.png" topMiddle="classpath:com.ibm.cdf.cui:images/overview/labelbox_normal_tm.png" topRight="classpath:com.ibm.cdf.cui:images/overview/labelbox_normal_tr.png" middleLeft="classpath:com.ibm.cdf.cui:images/overview/labelbox_normal_ml.png" middleMiddle="classpath:com.ibm.cdf.cui:images/overview/labelbox_normal_mm.png" middleRight="classpath:com.ibm.cdf.cui:images/overview/labelbox_normal_mr.png" bottomLeft="classpath:com.ibm.cdf.cui:images/overview/labelbox_normal_bl.png" bottomMiddle="classpath:com.ibm.cdf.cui:images/overview/labelbox_normal_bm.png" bottomRight="classpath:com.ibm.cdf.cui:images/overview/labelbox_normal_br.png"/>
+				</labelBox>
+			</element>
+
+			<chevron>
+				<color value="{205, 205, 205}"/>
+				<font fontFamily="Tahoma" fontSize="7px"/>
+			</chevron>
+
+			<dragAndDrop>
+				<dragOver>
+					<background backgroundColor="{240, 240, 240}"/>
+				</dragOver>
+
+				<dropDown>
+					<background backgroundColor="{224, 224, 224}"/>
+					<color value="{205, 205, 205}"/>
+				</dropDown>
+
+				<insertion>
+					<background backgroundColor="{255, 255, 255}"/>
+					<color value="{205, 205, 205}"/>
+					<border borderColor="{205, 205, 205}"/>
+				</insertion>
+
+				<reposition>
+					<color value="{0, 0, 0}"/>
+				</reposition>
+			</dragAndDrop>
+		</overview>
+		
+		<axisSelector>
+			<background backgroundColor="{246, 247, 249}"/>
+			<border borderColor="{255, 255, 255}"/>
+			<innerEdge>
+				<borderTop borderColor="{255, 255, 255}"/>
+				<borderBottom borderColor="{216, 216, 216}"/>
+			</innerEdge>
+		   </axisSelector>
+		
+	       <headerCell>
+		<!-- unselected header BG -->
+            <background backgroundColor="{247, 251, 254}" backgroundImage="classpath:com.ibm.cdf.cui:images/grid/silver_grad.png"/>
+            <!--header font --> 
+			<color value="{20, 20, 20}"/>
+            <font fontFamily="Arial" fontSize="8px"/>
+			<!-- inside border between the headers and content cells -->
+			<border borderColor="{170, 170, 170}"/>
+			
+			<separator>
+			<!-- header divider-->
+				<background backgroundColor="{200, 200, 200}"/> 
+			</separator>
+			
+			<selected>
+			<!--header gradient base color select -->
+	            <background backgroundColor="{195, 218, 247}" backgroundImage="classpath:com.ibm.cdf.cui:images/grid/light_blue_grad.png"/>
+				<!-- selected header text -->
+	            <color value="{20, 20, 20}"/>
+			</selected>
+			
+			<memberAttribute>
+				<color value="{100, 100, 100}"/> 
+				<font fontFamily="Arial" fontSize="8px" fontStyle="italic"/>
+			</memberAttribute>
+			
+			<selectedMemberAttribute>
+				<color value="{100, 100, 100}"/> 
+			</selectedMemberAttribute>
+
+            <dragAndDrop>
+                <insertion>
+                    <background backgroundColor="{255, 153, 0}"/>
+                </insertion>
+            </dragAndDrop>
+        </headerCell>
+		
+        <contentCell>
+		<!--unselected cell BG -->
+            <background backgroundColor="{247, 251, 254}"/>
+		<!--unselected cell text-->	
+            <color value="{20, 20, 20}"/>
+            <font fontFamily="Arial" fontSize="10px" fontWeight="normal"/>
+		<!--unselected cell border-->		
+		<!--<border border-color="{170, 170, 170}"/>-->
+			<borderTop borderWidth="0" borderStyle="none" borderColor="{200, 200, 200}"/>
+			<borderRight borderWidth="0" borderStyle="none" borderColor="{200, 200, 200}"/>
+			<borderBottom borderWidth="1" borderStyle="solid" borderColor="{200, 200, 200}"/>
+			<borderLeft borderWidth="0" borderStyle="none" borderColor="{200, 200, 200}"/>
+            <paddingTop value="8"/>
+            <paddingRight value="6"/>
+            <paddingBottom value="8"/>
+            <paddingLeft value="6"/>
+                
+            <selection>
+                <selectedCell>
+                    <background backgroundColor="{195, 218, 247}"/>
+                    <color value="{0, 0, 0}"/>
+                </selectedCell>
+                <highlightedCell>
+				<!--selected row /column cell-->	
+                    <background backgroundColor="{247, 251, 254}"/>
+                    <color value="{20, 20, 20}"/>
+	                </highlightedCell>
+                <unselectedCell>
+				<!--???-->	
+                    <background backgroundColor="{247, 251, 254}"/>
+                    <color value="{0, 0, 0}"/>
+                </unselectedCell>
+            </selection>	
+		    
+		    <states>
+		        <hold>
+					<background backgroundColor="{210, 210, 210}"/>
+		        </hold>
+		        
+		        <unsaved>
+		            <color value="{0, 0, 192}"/>
+		        </unsaved>
+		        
+		        <pendingChange>
+		            <color value="{50, 150, 100}"/>
+		        </pendingChange>
+
+                <unchanged>
+                    <color value="{0, 0, 0}"/>
+                </unchanged>
+		        
+		        <uneditable>
+		            <background backgroundColor="{235, 235, 235}"/>
+		        </uneditable>
+		        
+		        <trafficLightIcon>
+		            <background backgroundColor="{255, 255, 255}"/>
+		        </trafficLightIcon>
+		    </states>
+    	</contentCell>
+    </cubeViewer>
+
+    <facet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <background backgroundColor="{247, 251, 254}"/>
+		<color value="{0, 0, 0}"/>
+        <font fontFamily="Arial" fontSize="8px" fontWeight="normal"/>
+		<border borderWidth="1" borderStyle="solid" borderColor="{207, 232, 238}"/>
+        
+        <header>
+            <background backgroundColor="{221, 235, 249}" backgroundImage="luminance_facet_gradient.png" backgroundRepeat="repeat-x"/>
+            <color value="{5, 83, 143}"/>    
+            <font fontFamily="Arial" fontSize="9px"/>
+        </header>
+    
+        <selection>
+            <selectedRelatedStyle>
+                <background backgroundColor="{249, 212, 158}"/>
+                <color value="{0, 0, 0}"/>
+                <font fontFamily="Arial" fontSize="8px" fontWeight="bold"/>
+            </selectedRelatedStyle>
+            <selectedUnrelatedStyle>
+                <background backgroundColor="{249, 212, 158}"/>
+                <color value="{47, 47, 47}"/>
+                <font fontFamily="Arial" fontSize="8px" fontWeight="bold"/>
+            </selectedUnrelatedStyle>
+            <unselectedRelatedStyle>
+                <background backgroundColor="{255, 255, 255}"/>
+                <color value="{0, 0, 0}"/>
+                <font fontFamily="Arial" fontSize="8px" fontWeight="normal"/>
+            </unselectedRelatedStyle>
+            <unselectedUnrelatedStyle>
+                <background backgroundColor="{241, 245, 244}"/>
+                <color value="{47, 47, 47}"/>
+                <font fontFamily="Arial" fontSize="8px" fontWeight="normal"/>
+            </unselectedUnrelatedStyle>
+            <defaultStyle>
+                <background backgroundColor="{255, 255, 255}"/>
+                <color value="{0, 0, 0}"/>
+               <font fontFamily="Arial" fontSize="8px" fontWeight="normal"/>
+            </defaultStyle>
+         </selection>
+    </facet>
+    
+    <chart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <background opacity="0"/>
+		<!--<background background-color="{247, 251, 254}"/>-->
+		<color value="{20, 20, 20}"/>
+		<font fontFamily="Arial Unicode MS" fontSize="9px"/>
+		
+        <axis>
+            <color value="{215, 215, 215}"/>
+            <font fontFamily="Arial Unicode MS" fontSize="9px"/>
+        </axis>
+        
+        <palettes default="metro">
+	        <palette name="Default">
+				<categoricalPalette>
+					<gradient startColor="{133, 153, 211}" endColor="{88, 118, 174}"/>
+					<gradient startColor="{227, 174, 108}" endColor="{205, 133, 78}"/>
+					<gradient startColor="{131, 152, 98}" endColor="{108, 127, 86}"/>
+					<gradient startColor="{183, 200, 115}" endColor="{175, 184, 133}"/>
+					<gradient startColor="{132, 132, 168}" endColor="{82, 94, 126}"/>
+					<gradient startColor="{192, 204, 237}" endColor="{176, 194, 229}"/>
+					<gradient startColor="{140, 85, 128}" endColor="{121, 64, 103}"/>
+					<gradient startColor="{199, 137, 188}" endColor="{187, 114, 188}"/>
+					<gradient startColor="{213, 186, 239}" endColor="{194, 159, 209}"/>
+					<gradient startColor="{131, 104, 63}" endColor="{96, 73, 38}"/>
+					<gradient startColor="{220, 176, 90}" endColor="{192, 156, 82}"/>
+					<gradient startColor="{244, 223, 158}" endColor="{228, 207, 135}"/>
+					<gradient startColor="{95, 138, 140}" endColor="{83, 117, 121}"/>
+					<gradient startColor="{150, 196, 178}" endColor="{137, 176, 160}"/>
+					<gradient startColor="{203, 232, 231}" endColor="{189, 214, 213}"/>
+					<gradient startColor="{174, 101, 100}" endColor="{135, 83, 82}"/>
+					<gradient startColor="{216, 140, 111}" endColor="{196, 125, 97}"/>
+					<gradient startColor="{227, 201, 176}" endColor="{210, 178, 165}"/>
+					<gradient startColor="{132, 132, 132}" endColor="{85, 85, 85}"/>
+					<gradient startColor="{164, 164, 164}" endColor="{144, 144, 144}"/>
+					<gradient startColor="{199, 199, 199}" endColor="{193, 193, 193}"/>
+				</categoricalPalette>
+				<scalarPalette startColor="{133, 153, 211}" middleColor="{220, 176, 90}" endColor="{193, 193, 193}"/>
+				
+			</palette>
+
+			<palette name="classic">
+				<categoricalPalette>
+					<gradient startColor="{00, 00, 102}" endColor="{00, 00, 102}"/>
+					<gradient startColor="{153, 204, 255}" endColor="{153, 204, 255}"/>
+					<gradient startColor="{51, 102, 153}" endColor="{51, 102, 153}"/>
+					<gradient startColor="{243, 243, 243}" endColor="{243, 243, 243}"/>
+					<gradient startColor="{0, 132, 227}" endColor="{0, 132, 227}"/>
+					<gradient startColor="{231, 231, 231}" endColor="{231, 231, 231}"/>
+					<gradient startColor="{255, 170, 204}" endColor="{255, 170, 204}"/>
+					<gradient startColor="{153, 153, 153}" endColor="{153, 153, 153}"/>
+					<gradient startColor="{227, 233, 243}" endColor="{227, 233, 243}"/>
+					<gradient startColor="{204, 204, 204}" endColor="{204, 204, 204}"/>
+				</categoricalPalette>
+				<scalarPalette startColor="{133, 153, 211}" middleColor="{220, 176, 90}" endColor="{193, 193, 193}"/>
+			</palette>
+
+			<palette name="contemporary">
+				<categoricalPalette>
+					<gradient startColor="{51, 102, 103}" endColor="{51, 102, 103}"/>
+					<gradient startColor="{255, 204, 0}" endColor="{255, 204, 0}"/>
+					<gradient startColor="{102, 153, 102}" endColor="{102, 153, 102}"/>
+					<gradient startColor="{255, 234, 150}" endColor="{255, 234, 150}"/>
+					<gradient startColor="{179, 226, 131}" endColor="{179, 226, 131}"/>
+					<gradient startColor="{255, 255, 204}" endColor="{255, 255, 204}"/>
+					<gradient startColor="{156, 188, 107}" endColor="{156, 188, 107}"/>
+					<gradient startColor="{255, 225, 106}" endColor="{255, 225, 106}"/>
+					<gradient startColor="{214, 224, 205}" endColor="{214, 224, 205}"/>
+					<gradient startColor="{204, 153, 0}" endColor="{204, 153, 0}"/>
+				</categoricalPalette>
+				<scalarPalette startColor="{133, 153, 211}" middleColor="{220, 176, 90}" endColor="{193, 193, 193}"/>
+			</palette>
+
+			<palette name="active">
+				<categoricalPalette>
+					<gradient startColor="{240, 0, 0}" endColor="{120, 0, 0}"/>
+					<gradient startColor="{245, 244, 229}" endColor="{210, 205, 144}"/>
+					<gradient startColor="{74, 78, 84}" endColor="{18, 19, 20}"/>
+					<gradient startColor="{182, 214, 210}" endColor="{105, 171, 162}"/>
+					<gradient startColor="{179, 169, 149}" endColor="{121, 110, 87}"/>
+					<gradient startColor="{131, 135, 141}" endColor="{82, 85, 90}"/>
+					<gradient startColor="{249, 249, 249}" endColor="{219, 219, 219}"/>
+					<gradient startColor="{116, 140, 179}" endColor="{155, 173, 201}"/>
+				</categoricalPalette>
+				<scalarPalette startColor="{133, 153, 211}" middleColor="{220, 176, 90}" endColor="{193, 193, 193}"/>
+			</palette>
+
+			<palette name="corporate">
+				<categoricalPalette>
+					<gradient startColor="{0, 0, 102}" endColor="{0, 0, 102}"/>
+					<gradient startColor="{255, 204, 0}" endColor="{255, 204, 0}"/>
+					<gradient startColor="{51, 102, 153}" endColor="{51, 102, 153}"/>
+					<gradient startColor="{255, 225, 106}" endColor="{255, 225, 106}"/>
+					<gradient startColor="{153, 170, 204}" endColor="{153, 170, 204}"/>
+					<gradient startColor="{255, 255, 204}" endColor="{255, 255, 204}"/>
+					<gradient startColor="{190, 200, 220}" endColor="{190, 200, 220}"/>
+					<gradient startColor="{204, 153, 0}" endColor="{204, 153, 0}"/>
+					<gradient startColor="{227, 233, 243}" endColor="{227, 233, 243}"/>
+					<gradient startColor="{255, 234, 150}" endColor="{255, 234, 150}"/>
+				</categoricalPalette>
+				<scalarPalette startColor="{133, 153, 211}" middleColor="{220, 176, 90}" endColor="{193, 193, 193}"/>
+			</palette>
+
+			<palette name="dynamic">
+				<categoricalPalette>
+					<gradient startColor="{19, 75, 234}" endColor="{11, 41, 130}"/>
+					<gradient startColor="{80, 203, 28}" endColor="{66, 152, 47}"/>
+					<gradient startColor="{242, 205, 0}" endColor="{249, 190, 9}"/>
+					<gradient startColor="{255, 138, 0}" endColor="{222, 79, 1}"/>
+					<gradient startColor="{224, 27, 27}" endColor="{171, 9, 9}"/>
+					<gradient startColor="{61, 61, 61}" endColor="{10, 10, 10}"/>
+					<gradient startColor="{191, 56, 225}" endColor="{138, 29, 222}"/>
+					<gradient startColor="{133, 20, 199}" endColor="{46, 0, 114}"/>
+					<gradient startColor="{15, 139, 3}" endColor="{4, 74, 1}"/>
+					<gradient startColor="{149, 191, 20}" endColor="{130, 140, 11}"/>
+					<gradient startColor="{71, 145, 218}" endColor="{32, 96, 183}"/>
+					<gradient startColor="{118, 221, 230}" endColor="{44, 182, 199}"/>
+					<gradient startColor="{6, 13, 149}" endColor="{6, 3, 79}"/>
+					<gradient startColor="{195, 85, 11}" endColor="{163, 58, 0}"/>
+				</categoricalPalette>
+				<scalarPalette startColor="{133, 153, 211}" middleColor="{220, 176, 90}" endColor="{193, 193, 193}"/>
+			</palette>
+
+			<palette name="excel">
+				<categoricalPalette>
+					<gradient startColor="{153, 153, 255}" endColor="{153, 153, 255}"/>
+					<gradient startColor="{153, 81, 102}" endColor="{153, 81, 102}"/>
+					<gradient startColor="{255, 255, 204}" endColor="{255, 255, 204}"/>
+					<gradient startColor="{204, 255, 255}" endColor="{204, 255, 255}"/>
+					<gradient startColor="{102, 0, 102}" endColor="{102, 0, 102}"/>
+					<gradient startColor="{255, 128, 128}" endColor="{255, 128, 128}"/>
+					<gradient startColor="{0, 102, 204}" endColor="{0, 102, 204}"/>
+					<gradient startColor="{204, 204, 255}" endColor="{204, 204, 255}"/>
+					<gradient startColor="{0, 0, 128}" endColor="{0, 0, 128}"/>
+					<gradient startColor="{255, 0, 255}" endColor="{255, 0, 255}"/>
+					<gradient startColor="{255, 255, 0}" endColor="{255, 255, 0}"/>
+					<gradient startColor="{0, 255, 255}" endColor="{0, 255, 255}"/>
+					<gradient startColor="{128, 0, 128}" endColor="{128, 0, 128}"/>
+					<gradient startColor="{128, 0, 0}" endColor="{128, 0, 0}"/>
+					<gradient startColor="{0, 128, 128}" endColor="{0, 128, 128}"/>
+					<gradient startColor="{0, 0, 255}" endColor="{0, 0, 255}"/>
+					<gradient startColor="{0, 204, 255}" endColor="{0, 204, 255}"/>
+					<gradient startColor="{204, 255, 255}" endColor="{204, 255, 255}"/>
+					<gradient startColor="{204, 255, 204}" endColor="{204, 255, 204}"/>
+					<gradient startColor="{255, 255, 153}" endColor="{255, 255, 153}"/>
+					<gradient startColor="{153, 204, 255}" endColor="{153, 204, 255}"/>
+					<gradient startColor="{255, 153, 204}" endColor="{255, 153, 204}"/>
+					<gradient startColor="{204, 153, 255}" endColor="{204, 153, 255}"/>
+					<gradient startColor="{255, 204, 153}" endColor="{255, 204, 153}"/>
+					<gradient startColor="{81, 102, 255}" endColor="{81, 102, 255}"/>
+					<gradient startColor="{81, 204, 204}" endColor="{81, 204, 204}"/>
+					<gradient startColor="{153, 204, 0}" endColor="{153, 204, 0}"/>
+					<gradient startColor="{255, 204, 0}" endColor="{255, 204, 0}"/>
+					<gradient startColor="{255, 153, 0}" endColor="{255, 153, 0}"/>
+					<gradient startColor="{255, 102, 0}" endColor="{255, 102, 0}"/>
+					<gradient startColor="{102, 102, 153}" endColor="{102, 102, 153}"/>
+					<gradient startColor="{150, 150, 150}" endColor="{150, 150, 150}"/>
+					<gradient startColor="{0, 81, 0}" endColor="{0, 81, 0}"/>
+					<gradient startColor="{81, 153, 102}" endColor="{81, 153, 102}"/>
+					<gradient startColor="{0, 81, 0}" endColor="{0, 81, 0}"/>
+					<gradient startColor="{81, 81, 0}" endColor="{81, 81, 0}"/>
+					<gradient startColor="{153, 81, 0}" endColor="{153, 81, 0}"/>
+					<gradient startColor="{153, 81, 102}" endColor="{153, 81, 102}"/>
+					<gradient startColor="{81, 81, 153}" endColor="{81, 81, 153}"/>
+					<gradient startColor="{81, 81, 81}" endColor="{81, 81, 81}"/>
+					<gradient startColor="{0, 0, 0}" endColor="{0, 0, 0}"/>
+					<gradient startColor="{255, 255, 255}" endColor="{255, 255, 255}"/>
+					<gradient startColor="{255, 0, 0}" endColor="{255, 0, 0}"/>
+					<gradient startColor="{0, 255, 0}" endColor="{0, 255, 0}"/>
+					<gradient startColor="{0, 0, 255}" endColor="{0, 0, 255}"/>
+					<gradient startColor="{255, 255, 0}" endColor="{255, 255, 0}"/>
+					<gradient startColor="{255, 0, 255}" endColor="{255, 0, 255}"/>
+					<gradient startColor="{0, 255, 255}" endColor="{0, 255, 255}"/>
+					<gradient startColor="{128, 0, 0}" endColor="{128, 0, 0}"/>
+					<gradient startColor="{0, 128, 0}" endColor="{0, 128, 0}"/>
+					<gradient startColor="{0, 0, 128}" endColor="{0, 0, 128}"/>
+					<gradient startColor="{128, 128, 0}" endColor="{128, 128, 0}"/>
+					<gradient startColor="{128, 0, 128}" endColor="{128, 0, 128}"/>
+					<gradient startColor="{0, 128, 128}" endColor="{0, 128, 128}"/>
+					<gradient startColor="{192, 192, 192}" endColor="{192, 192, 192}"/>
+					<gradient startColor="{128, 128, 128}" endColor="{128, 128, 128}"/>
+				</categoricalPalette>
+				<scalarPalette startColor="{133, 153, 211}" middleColor="{220, 176, 90}" endColor="{193, 193, 193}"/>
+			</palette>
+
+			<palette name="excel2007">
+				<categoricalPalette>
+					<gradient startColor="{3, 120, 177}" endColor="{3, 120, 177}"/>
+					<gradient startColor="{179, 74, 71}" endColor="{179, 74, 71}"/>
+					<gradient startColor="{145, 175, 83}" endColor="{145, 175, 83}"/>
+					<gradient startColor="{119, 93, 151}" endColor="{119, 93, 151}"/>
+					<gradient startColor="{70, 161, 185}" endColor="{70, 161, 18}"/>
+					<gradient startColor="{231, 140, 65}" endColor="{231, 140, 65}"/>
+					<gradient startColor="{126, 155, 200}" endColor="{126, 155, 200}"/>
+					<gradient startColor="{202, 126, 125}" endColor="{202, 126, 125}"/>
+					<gradient startColor="{174, 198, 131}" endColor="{174, 198, 131}"/>
+					<gradient startColor="{155, 137, 179}" endColor="{155, 137, 179}"/>
+					<gradient startColor="{124, 187, 207}" endColor="{124, 187, 207}"/>
+					<gradient startColor="{248, 170, 121}" endColor="{248, 170, 121}"/>
+				</categoricalPalette>
+				<scalarPalette startColor="{133, 153, 211}" middleColor="{220, 176, 90}" endColor="{193, 193, 193}"/>
+			</palette>
+
+			<palette name="gradients">
+				<categoricalPalette>
+					<gradient startColor="{255, 0, 0}" endColor="{255, 255, 255}"/>
+					<gradient startColor="{0, 0, 255}" endColor="{255, 255, 255}"/>
+					<gradient startColor="{102, 204, 0}" endColor="{255, 255, 255}"/>
+					<gradient startColor="{0, 255, 255}" endColor="{255, 255, 255}"/>
+					<gradient startColor="{255, 153, 51}" endColor="{255, 255, 255}"/>
+					<gradient startColor="{102, 51, 0}" endColor="{255, 255, 255}"/>
+				</categoricalPalette>
+				<scalarPalette startColor="{133, 153, 211}" middleColor="{220, 176, 90}" endColor="{193, 193, 193}"/>
+			</palette>
+
+			<palette name="greyScale">
+				<categoricalPalette>
+					<gradient startColor="{211, 211, 211}" endColor="{231, 231, 231}"/>
+					<gradient startColor="{160, 160, 160}" endColor="{180, 180, 180}"/>
+					<gradient startColor="{109, 109, 109}" endColor="{129, 129, 129}"/>
+					<gradient startColor="{41, 41, 41}" endColor="{61, 61, 61}"/>
+					<gradient startColor="{0, 0, 0}" endColor="{1, 1, 1}"/>
+				</categoricalPalette>
+				<scalarPalette startColor="{133, 153, 211}" middleColor="{220, 176, 90}" endColor="{193, 193, 193}"/>
+			</palette>
+
+			<palette name="jazz">
+				<categoricalPalette>
+					<gradient startColor="{48, 119, 150}" endColor="{184, 206, 212}"/>
+					<gradient startColor="{185, 94, 78}" endColor="{232, 159, 137}"/>
+					<gradient startColor="{151, 153, 55}" endColor="{201, 203, 44}"/>
+					<gradient startColor="{202, 151, 50}" endColor="{255, 217, 126}"/>
+					<gradient startColor="{123, 74, 122}" endColor="{190, 145, 191}"/>
+					<gradient startColor="{148, 176, 167}" endColor="{226, 237, 237}"/>
+					<gradient startColor="{137, 44, 28}" endColor="{214, 127, 99}"/>
+					<gradient startColor="{158, 160, 89}" endColor="{220, 219, 122}"/>
+					<gradient startColor="{180, 135, 45}" endColor="{226, 187, 61}"/>
+					<gradient startColor="{157, 127, 185}" endColor="{215, 204, 229}"/>
+					<gradient startColor="{105, 122, 28}" endColor="{160, 179, 49}"/>
+					<gradient startColor="{167, 100, 56}" endColor="{250, 189, 151}"/>
+					<gradient startColor="{15, 106, 105}" endColor="{102, 189, 187}"/>
+					<gradient startColor="{149, 84, 93}" endColor="{235, 158, 168}"/>
+					<gradient startColor="{81, 155, 179}" endColor="{167, 210, 219}"/>
+					<gradient startColor="{238, 202, 99}" endColor="{247, 228, 176}"/>
+				</categoricalPalette>
+				<scalarPalette startColor="{133, 153, 211}" middleColor="{220, 176, 90}" endColor="{193, 193, 193}"/>
+			</palette>
+			
+			<palette name="metro">
+				<categoricalPalette>
+					<gradient startColor="{100, 139, 208}" endColor="{56, 104, 163}"/>
+					<gradient startColor="{56, 104, 163}" endColor="{137, 179, 201}"/>
+					<gradient startColor="{219, 137, 56}" endColor="{212, 110, 9}"/>
+					<gradient startColor="{226, 186, 63}" endColor="{239, 180, 2}"/>
+					<gradient startColor="{62, 138, 59}" endColor="{84, 117, 42}"/>
+					<gradient startColor="{125, 187, 49}" endColor="{106, 165, 21}"/>
+					<gradient startColor="{132, 92, 161}" endColor="{113, 81, 136}"/>
+					<gradient startColor="{184, 154, 224}" endColor="{153, 112, 207}"/>
+					<gradient startColor="{174, 119, 51}" endColor="{148, 77, 19}"/>
+					<gradient startColor="{231, 173, 77}" endColor="{231, 152, 23}"/>
+					<gradient startColor="{168, 73, 49}" endColor="{168, 51, 24}"/>
+					<gradient startColor="{221, 109, 83}" endColor="{214, 92, 63}"/>
+					<gradient startColor="{140, 157, 159}" endColor="{82, 103, 120}"/>
+					<gradient startColor="{169, 197, 204}" endColor="{130, 149, 171}"/>
+				</categoricalPalette>
+				<scalarPalette startColor="{133, 153, 211}" middleColor="{220, 176, 90}" endColor="{193, 193, 193}"/>
+			</palette>
+
+    		<palette name="modern">
+    			<categoricalPalette>
+	  				<gradient startColor="{89, 160, 189}" endColor="{26, 128, 168}"/>
+	                <gradient startColor="{141, 136, 199}" endColor="{109, 102, 185}"/>
+	                <gradient startColor="{135, 168, 72}" endColor="{105, 129, 17}"/>
+	                <gradient startColor="{232, 230, 103}" endColor="{200, 197, 72}"/>
+	                <gradient startColor="{233, 199, 86}" endColor="{204, 168, 59}"/>
+	                <gradient startColor="{177, 112, 68}" endColor="{142, 80, 40}"/>
+	                <gradient startColor="{160, 90, 90}" endColor="{127, 51, 51}"/>
+	                <gradient startColor="{165, 165, 165}" endColor="{127, 127, 127}"/>
+				</categoricalPalette>
+				<scalarPalette startColor="{133, 153, 211}" middleColor="{220, 176, 90}" endColor="{193, 193, 193}"/>     
+    		</palette>
+		</palettes>
+		
+    	<chartDepth>75</chartDepth>
+    	<barWidth>75</barWidth>
+    	<lineChartThickness>3</lineChartThickness>
+    	<showDataValues>false</showDataValues>
+    	<materialEffect>Matte</materialEffect>
+    	<barShape>Box</barShape>
+    	<gradientDirection>Right</gradientDirection>
+    </chart>
+</ds:ThemeStyleType>
